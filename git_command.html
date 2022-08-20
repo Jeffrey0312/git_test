@@ -1,0 +1,83 @@
+// Git Global Setup
+
+git config --global user.name ""
+git config --global user.email ""
+git config --global color.ui auto
+git config --global merge.conflictstyle diff3
+git config --global core.editor "code --wait"
+
+// Git Setting Up a Repository
+
+git init or git clone(remote repository only)
+
+// Git Commit Changes
+
+git add
+git commit
+git rm(optional)
+git stash (!)
+
+// Git Commit Message
+
+need to be meaningful with specific number or working title
+
+// Git Undo Changes
+
+git checkout
+git clean
+git revert
+git reset
+
+// Git Status and History
+
+git status
+git diff
+git log
+
+// Git Branching
+
+git branch
+git branch -d
+git checkout -b
+
+// Git Graph
+
+git log --all --decorate --oneline --graph
+
+// Git Merge Conflict
+
+git merge <branch name> --abort
+git merge <branch name> --overwrite-ignore
+git merge <branch name> --no-overwrite-ignore
+
+// Git Connect to Remote Repo
+
+git clone
+git remote add <name><url>
+git remote rm <name>
+git remote rename <old-name> <new-name>
+
+// Git Set Up Tracking Branch
+
+git branch -u <name>/<branch>
+
+// Git Update Local From Remote
+
+git fetch
+git pull
+
+// Git Update Remote From Local
+
+git push <name> <branch>
+git push <name> <local_branch>:<remote_branch>
+
+// Git Delete a Remote Branch
+
+git push -d <name <branch>
+git push <name> : <branch>
+
+// Git Force Push
+
+git push -f
+git push <name> + <branch_name>
+git push --force-with-lease
